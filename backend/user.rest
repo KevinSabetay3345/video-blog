@@ -1,0 +1,39 @@
+POST http://localhost:27017/users/add
+Content-Type: application/json
+
+{
+    "username": "test11",
+    "password": "testpass11",
+    "nickname": "my nickname1" 
+}
+
+###
+
+GET http://localhost:27017/users/signin
+Content-Type: application/json
+
+{
+    "username": "test10666",
+    "password": "testpass11" 
+}
+
+###
+
+GET http://localhost:27017/users
+
+
+###
+
+PUT http://localhost:27017/users/update/id
+Content-Type: application/json
+
+{
+    "username": "testChanged",
+    "password": "testyears",
+    "nickname": "URLtest" 
+}
+
+###
+
+
+DELETE http://localhost:3000/users/id

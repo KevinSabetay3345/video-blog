@@ -1,0 +1,29 @@
+POST http://localhost:3000/posts/add
+Content-Type: application/json
+
+{
+    "title": "Otra mirada sobra la historia universal",
+    "subtitle": "Enrique Dussel",
+    "ytURL": "https://www.youtube.com/watch?v=6GLzHSlGf4o&t=196s",
+    "userNickname": "Test User" 
+}
+     
+###
+
+GET http://localhost:3000/posts
+
+###
+
+PUT http://localhost:3000/users/update/id
+Content-Type: application/json
+
+{
+    "username": "testChanged",
+    "password": "testyears",
+    "nickname": "URLtest" 
+}
+
+###
+
+
+DELETE http://localhost:3000/users/id
